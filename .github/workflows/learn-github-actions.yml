@@ -2,9 +2,8 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  test-bash-version:
+  testbashversion:
     runs-on: ubuntu-latest
     steps:
-          node-version: '14'
       - run: echo "Hello, Test bash"
 
