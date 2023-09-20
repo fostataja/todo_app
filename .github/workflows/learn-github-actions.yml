@@ -5,7 +5,8 @@ jobs:
   testbashversion:
     runs-on: ubuntu-latest
     steps:
-      - run: cd ./src/webapp
+      - run: ls
+      - run: cd src/webapp
       - run: npm install
       - run: npm run start-server
       - run: cd ../../e2e/cypress
