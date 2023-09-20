@@ -5,5 +5,10 @@ jobs:
   testbashversion:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, Test bash"
+      - run: cd src/webapp
+      - run: npm install
+      - run: npm run start-server
+      - run: cd ../../e2e/cypress
+      - run: npm install
+      - run: npm run test
 
