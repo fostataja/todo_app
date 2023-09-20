@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
+      - run: ls
       - run: cd src/webapp
       - run: npm install
       - run: npm run start-server
