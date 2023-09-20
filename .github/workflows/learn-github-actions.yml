@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
           node-version: '14'
-      - run: console.log("Hello, Test bash")
+      - run: echo "Hello, Test bash"
 
