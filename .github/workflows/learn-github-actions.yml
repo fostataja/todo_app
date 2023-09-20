@@ -11,6 +11,7 @@ jobs:
           node-version: '18'
       - run: ls
       - run: cd src/webapp
+      - run: ls
       - run: npm install
       - run: npm run start-server
       - run: cd ../../e2e/cypress
