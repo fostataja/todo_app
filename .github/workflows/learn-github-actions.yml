@@ -5,7 +5,10 @@ jobs:
   testbashversion:
     runs-on: ubuntu-latest
     steps:
-      - run: ls
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
       - run: cd src/webapp
       - run: npm install
       - run: npm run start-server
